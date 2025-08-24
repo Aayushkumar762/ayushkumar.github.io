@@ -1,66 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aayush Kumar | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aayush Kumar - Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333; }
-    header { background:#222; color:#fff; padding:40px 20px; text-align:center; }
-    header h1 { margin:0; font-size:2.5em; }
-    nav { margin-top:15px; }
-    nav a { color:#ddd; margin:0 12px; text-decoration:none; font-weight:500; }
-    nav a:hover { color:#fff; }
-    section { max-width:900px; margin:40px auto; padding:20px; background:#fff; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
-    h2 { color:#444; border-bottom:2px solid #ddd; padding-bottom:8px; margin-bottom:15px; }
-    ul li { margin:8px 0; }
-    .contact a { color:#0077cc; text-decoration:none; }
-    .contact a:hover { text-decoration:underline; }
-    footer { background:#222; color:#fff; text-align:center; padding:15px; margin-top:40px; font-size:0.9em; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .about, .projects, .contact {
+      margin-bottom: 50px;
+    }
+    h2 {
+      color: #222;
+      margin-bottom: 15px;
+    }
+    .project-card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    }
+    .resume-btn {
+      display: inline-block;
+      background: #222;
+      color: white;
+      padding: 12px 20px;
+      margin-top: 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .resume-btn:hover {
+      background: #444;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
   </style>
 </head>
 <body>
+
   <header>
+    <img src="photo.jpg" alt="Aayush Kumar">
     <h1>Aayush Kumar</h1>
-    <p>B.Tech CSE Student | Quick Learner & Aspiring Developer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Content Writer | B.Tech CSE Student | Aspiring Web Developer</p>
+    <a href="resume.pdf" class="resume-btn" target="_blank">📄 Download Resume</a>
   </header>
 
-  <section id="about">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
     <h2>About Me</h2>
-    <p>Hello! I am a Computer Science Engineering student at BIT Meerut (2022–2026). I have a passion for learning new technologies and strong foundations in programming and content creation. My strengths include adaptability, hard work, and rapid skill acquisition.</p>
+    <p>
+      Hello! I am Aayush Kumar, a passionate Content Writer and B.Tech Computer Science student. 
+      I love creating engaging content, learning new technologies, and working on web projects. 
+      My goal is to grow as a professional and contribute to impactful projects.
+    </p>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, C Programming</li>
-      <li>JavaScript (basic)</li>
-      <li>Content Writing</li>
-      <li>Problem Solving</li>
-    </ul>
-  </section>
-
-  <section id="projects">
+  <section id="projects" class="projects">
     <h2>Projects</h2>
-    <p><strong>Portfolio Website:</strong> Built and deployed using GitHub Pages.</p>
-    <p><strong>Content Writing Samples:</strong> Created blogs and articles for clients.</p>
+    <div class="project-card">
+      <h3>Personal Portfolio Website</h3>
+      <p>A responsive portfolio website built using HTML, CSS, and GitHub Pages.</p>
+    </div>
+    <div class="project-card">
+      <h3>Content Writing Portfolio</h3>
+      <p>A collection of blogs, articles, and professional content created for clients and portfolio use.</p>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Connect With Me</h2>
-    <p>Email: <a class="contact" href="mailto:ayushkulhadiyakheditagan@gmail.com">ayushkulhadiyakheditagan@gmail.com</a></p>
-    <p>LinkedIn: <a class="contact" href="https://www.linkedin.com/in/aayush-kumar-9447b0316" target="_blank">aayush-kumar-9447b0316</a></p>
-    <p>GitHub: <a class="contact" href="https://github.com/Aayushkumar762" target="_blank">Aayushkumar762</a></p>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:ayushkulhadiyakheditagan@gmail.com">ayushkulhadiyakheditagan@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Aayushkumar762">github.com/Aayushkumar762</a></p>
+    <p>LinkedIn: <a href="#"https://www.linkedin.com/in/aayush-kumar-9447b0316</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Aayush Kumar • All Rights Reserved</p>
+    <p>© 2025 Aayush Kumar | All Rights Reserved</p>
   </footer>
+
 </body>
 </html>
+
